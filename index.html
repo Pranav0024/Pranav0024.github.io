@@ -7,21 +7,39 @@
         <link rel="stylesheet" href="Style.css">
     </head>
     <body>
-        <div class="topnav">
-            <a class="active" href="index.html">Home</a>
-            <a href="#Resume">Resume</a>
-            <a href="#Projects">Projects am working on</a>
-            <a href="#About">About</a>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <i class="fa fa-bars"></i>
-            </a>
-          
-        </div> 
-        <div>
-          <h1 align = center>Pranav Salgotra</h1>            
-      </div>
-        <div>
-          <iframe src="elements/Resume.pdf" frameborder="0" height="700" width="100%"></iframe>
-        </div>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Resume.html">Resume</a></li>
+                    <li><a href="#Projects">Projects</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section id="home">
+                <h1>Welcome to My Personal Website</h1>
+                <img src="profile-pic.jpg" alt="Profile Picture">
+                <p>Insert a brief introduction about yourself here.</p>
+            </section>
+            <section id="resume">
+                <h2>Resume</h2>
+                <p>Insert your resume information here.</p>
+                <p>Download my resume as a PDF <a href="/elements/Resume.pdf" download>here</a>.</p>
+            </section>
+            <section id="about">
+                <h2>About Me</h2>
+                <p>Insert your personal information here.</p>
+            </section>
+            <section id="contact">
+                <h2>Contact</h2>
+                <p>Insert your contact information here.</p>
+            </section>
+        </main>
+        <footer>
+            <p>Copyright © 2023</p>
+        </footer>
     </body>
 </html>
