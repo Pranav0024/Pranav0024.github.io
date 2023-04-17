@@ -1,40 +1,79 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Resume Profile</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Personal Website</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+    <style>
+      body {
+        font-family: 'Montserrat', sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+
+      .hero {
+        background-image: url('background.jpg');
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .hero-text {
+        color: #fff;
+        text-align: center;
+      }
+
+      .hero-text h1 {
+        font-size: 4rem;
+        margin: 0;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      }
+
+      .hero-text p {
+        font-size: 1.5rem;
+        margin: 20px 0 0;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      }
+
+      .button {
+        background-color: #fff;
+        color: #333;
+        border: none;
+        padding: 10px 20px;
+        font-size: 1rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        border-radius: 5px;
+        text-decoration: none;
+        margin-top: 30px;
+        display: inline-block;
+        transition: background-color 0.3s ease;
+      }
+
+      .button:hover {
+        background-color: #333;
+        color: #fff;
+        cursor: pointer;
+      }
+    </style>
   </head>
   <body>
-    <h1>My Resume Profile</h1>
-    <h2>Personal Information</h2>
-    <ul>
-      <li>Name: [Your Name]</li>
-      <li>Email: [Your Email]</li>
-      <li>Phone: [Your Phone Number]</li>
-      <li>Location: [Your Location]</li>
-    </ul>
-    <h2>Summary</h2>
-    <p>[Insert a brief summary of your background and experience]</p>
-    <h2>Experience</h2>
-    <h3>Job Title 1</h3>
-    <p><em>Company Name</em> - Dates Worked</p>
-    <ul>
-      <li>[Insert information about your job responsibilities and accomplishments]</li>
-    </ul>
-    <h3>Job Title 2</h3>
-    <p><em>Company Name</em> - Dates Worked</p>
-    <ul>
-      <li>[Insert information about your job responsibilities and accomplishments]</li>
-    </ul>
-    <h2>Education</h2>
-    <h3>Degree 1</h3>
-    <p><em>School Name</em> - Dates Attended</p>
-    <ul>
-      <li>[Insert information about your degree and any relevant coursework]</li>
-    </ul>
-    <h3>Degree 2</h3>
-    <p><em>School Name</em> - Dates Attended</p>
-    <ul>
-      <li>[Insert information about your degree and any relevant coursework]</li>
-    </ul>
+    <div class="hero">
+      <div class="hero-text">
+        <h1>Welcome to My Personal Website</h1>
+        <p>Insert a brief introduction about yourself here.</p>
+        <a href="#about" class="button">Learn More</a>
+      </div>
+    </div>
+
+    <section id="about">
+      <h2>About Me</h2>
+      <p>Insert more information about yourself here.</p>
+    </section>
   </body>
 </html>
+
