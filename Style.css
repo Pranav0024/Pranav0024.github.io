@@ -50,6 +50,7 @@ nav a:hover {
 
 main {
 	margin: 20px;
+	color: #fff;
 }
 
 h1, h2 {
@@ -117,6 +118,12 @@ footer {
 
   .container {
 	height: 1000px;
+	background: url(elements/mainback.jpg) no-repeat center center fixed; 
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+	
   }
   .sticky {
 	position: sticky;
@@ -125,4 +132,16 @@ footer {
   }
   h3{
 	font-weight: normal;
+  }
+  .active{
+	background-color: #333;
+	color: #fff;
+  }
+  .container-r {
+	height: 1250px;
+	background: url(elements/mainback.jpg) no-repeat center center fixed; 
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
   }
