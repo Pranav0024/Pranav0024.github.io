@@ -1,25 +1,43 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Contact Me</title>
-</head>
-<body>
-	<h1>Contact Me</h1>
-	<form method="POST" action="https://formsubmit.co/contactform@pranavsalgotra.com">
-        <input type="hidden" name="_next" value="https://pranavsalgotra.com/thankyou.html">
-        <input type="hidden" name="_captcha" value="false">
-		<label for="name">Name:</label>
-		<input type="text" name="name" required><br>
-
-		<label for="email">Email:</label>
-		<input type="email" name="email" required><br>
-
-		<label for="message">Message:</label>
-		<textarea name="message" required></textarea><br>
-
-		<input type="submit" value="Send">
-
-        
-	</form>
-</body>
+    <head>
+        <title>Pranav Salgotra</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="Style.css">
+    </head>
+    <body>
+        <div class="container-r">
+        <nav id="nav" class="sticky">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Resume.html" class="active">Resume</a></li>
+                <li><a href="#Projects">Projects</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <main>
+            <form method="POST" action="https://formsubmit.co/contactform@pranavsalgotra.com">
+                <input type="hidden" name="_next" value="https://pranavsalgotra.com/thankyou.html">
+                <input type="hidden" name="_captcha" value="false">
+              <label for="name">Name:</label>
+              <input type="text" name="name" required><br>
+              
+              <label for="email">Email:</label>
+              <input type="email" name="email" required><br>
+              
+              <label for="message">Message:</label>
+              <textarea name="message" required></textarea><br>
+              
+              <input type="submit" value="Send" class="button">
+              
+                
+              </form>
+            </main>
+        </div>
+        <footer>
+            <p>Copyright © 2023</p>
+        </footer>
+    </body>
 </html>
