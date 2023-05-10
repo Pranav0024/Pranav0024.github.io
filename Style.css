@@ -1,6 +1,8 @@
 body {
 	font-family: Arial, sans-serif;
 	margin: 0;
+	height: auto;
+	width: auto;
 }
 
 header {
@@ -25,6 +27,7 @@ nav ul {
 nav li {
 	list-style: none;
 	margin-right: 20px;
+	display: flex;
 }
 
 nav a {
@@ -239,3 +242,156 @@ footer {
 .product p {
 	margin-bottom: 20px;
 }
+@media (max-width: 768px) {
+	header {
+	  text-align: center;
+	}
+  
+	nav ul {
+	  flex-direction: column;
+	  text-align: center;
+	}
+  
+	nav li {
+	  margin-right: 0;
+	  margin-bottom: 10px;
+	}
+  
+	.container,
+	.container-r,
+	.container-f,
+	.container-c {
+	  height: auto;
+	}
+  
+	.menu {
+	  display: none;
+	}
+  
+	.menu-icon {
+	  display: block;
+	  cursor: pointer;
+	}
+  
+	.menu-icon .bar {
+	  display: block;
+	  width: 25px;
+	  height: 3px;
+	  background-color: #fff;
+	  margin-bottom: 5px;
+	  transition: background-color 0.3s ease;
+	}
+  
+	.menu-icon .bar:last-child {
+	  margin-bottom: 0;
+	}
+  
+	/* Adjust the styling as needed */
+	.menu.active {
+	  display: flex;
+	  flex-direction: column;
+	  align-items: center;
+	  background-color: #333;
+	  position: absolute;
+	  top: 100%;
+	  left: 0;
+	  width: 100%;
+	  padding: 20px;
+	  background-color: #333;
+	  color: #fff;
+	}
+  
+	.menu.active li {
+	  margin-right: 0;
+	  margin-bottom: 10px;
+	  background-color: #333;
+	  color: #fff;
+	}
+  
+	.menu.active a {
+	  background-color: #fff;
+	  color: #333;
+	}
+	.menu.active {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		background-color: #333;
+		position: absolute;
+		top: 100%;
+		left: 0;
+		width: 100%;
+		padding: 20px;
+		background-color: #333;
+		color: #fff;
+	  }
+	  
+	  .menu.active li {
+		margin-right: 0;
+		margin-bottom: 10px;
+		background-color: #333;
+		color: #fff;
+	  }
+	  
+	  .menu.active a {
+		background-color: #fff;
+		color: #333;
+	  }
+	  
+  }
+.menu-icon {
+	display: none;
+	cursor: pointer;
+  }
+  .menu {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	padding: 20px;
+  }
+  
+  .menu li {
+	list-style: none;
+	margin-right: 20px;
+	display: flex;
+  }
+  .menu a {
+	background-color: #fff;
+	color: #333;
+	border: none;
+	padding: 10px 20px;
+	font-size: 1rem;
+	font-weight: bold;
+	text-transform: uppercase;
+	border-radius: 5px;
+	text-decoration: none;
+	margin-top: 30px;
+	display: inline-block;
+	transition: background-color 0.3s ease;
+  }
+  .menu.active {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: #333;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	width: 100%;
+	padding: 20px;
+	background-color: #333;
+	color: #fff;
+  }
+  
+  .menu.active li {
+	margin-right: 0;
+	margin-bottom: 10px;
+	background-color: #333;
+	color: #fff;
+  }
+  
+  .menu.active a {
+	background-color: #fff;
+	color: #333;
+  }
+  
