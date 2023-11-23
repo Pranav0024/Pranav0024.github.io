@@ -19,7 +19,7 @@ nav ul
 nav ul li
 {
     display: inline-block;
-    
+    font-size: 32px;
     
 }
 nav ul li img
@@ -32,8 +32,7 @@ nav ul li img
 }
 .info {
     display: flex; /* Use flexbox to create a flexible container */
-    align-items: center; /* Align items vertically in the center */
-    
+    align-items: center; /* Align items vertically in the center */  
 }
 
 .profilepic
@@ -41,4 +40,10 @@ nav ul li img
     width: 40%;
     padding: 1rem;
     min-width: 200px
+}
+.info p
+{
+    border: 1rem;
+    font-family: 'archivo narrow';
+    font-size: 32px;
 }
