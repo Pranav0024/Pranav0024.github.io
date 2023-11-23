@@ -1,4 +1,44 @@
+html
+{
+    font-family: 'Julius Sans One', Archivo Narrow;
+}
+
+a
+{
+    text-decoration: none;
+}
 nav
 {
-    background: local;
+    width: 100%;
+}
+nav ul
+{
+    list-style-type: none;
+    justify-content: space-between;
+}
+nav ul li
+{
+    display: inline-block;
+    
+    
+}
+nav ul li img
+{
+    width: 8rem;
+}
+.backimg
+{
+    width: 100%;
+}
+.info {
+    display: flex; /* Use flexbox to create a flexible container */
+    align-items: center; /* Align items vertically in the center */
+    
+}
+
+.profilepic
+{
+    width: 40%;
+    padding: 1rem;
+    min-width: 200px
 }
