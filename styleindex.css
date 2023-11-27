@@ -6,6 +6,7 @@ html
 a
 {
     text-decoration: none;
+    vertical-align: middle;
 }
 nav
 {
@@ -15,24 +16,28 @@ nav ul
 {
     list-style-type: none;
     justify-content: space-between;
+    margin-bottom: 0;
+    align-items: center;
 }
 nav ul li
 {
     display: inline-block;
     font-size: 32px;
-    
+    margin: 0 16px;
+    text-align: center;
 }
 nav ul li img
 {
-    width: 8rem;
+    width: 16rem;
 }
 .backimg
 {
     width: 100%;
+    height: 100%;
 }
 .info {
-    display: flex; /* Use flexbox to create a flexible container */
-    align-items: center; /* Align items vertically in the center */  
+    display: flex; 
+    align-items: center; 
 }
 
 .profilepic
@@ -46,4 +51,17 @@ nav ul li img
     border: 1rem;
     font-family: 'archivo narrow';
     font-size: 32px;
+}
+button
+{
+    display: inline-flex;
+    background: linear-gradient(to right, #F018B6, #4C1172);
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-size: 24px;
+    min-width: 50px;
+}
+button svg
+{
+    color: white;
 }
