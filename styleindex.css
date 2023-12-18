@@ -10,6 +10,7 @@ html
 {
     font-family: 'Julius Sans One', sans-serif;
     font-family: 'Archivo Narrow', sans-serif;
+    margin-top: 5px;
 }
 
 .container {
@@ -27,6 +28,8 @@ nav
 {
     width: 100%;
     font-family: 'Julius Sans One';
+    font-size: 32px;
+
 }
 nav ul
 {
@@ -35,6 +38,8 @@ nav ul
     justify-content: space-between;
     margin-bottom: 0;
     align-items: center;
+    font-size: 32px;
+
 }
 nav ul li
 {
@@ -115,6 +120,12 @@ a:hover{
     .info p {
         padding: 20px;
         font-size: 26px;
+    }
+    nav ul li {
+        font-size: 25px;
+    }
+    a+img{
+        width: 8px;
     }
     
 }
