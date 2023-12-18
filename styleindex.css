@@ -1,7 +1,22 @@
+/*Reset*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+
+}
+
 html
 {
-    font-family: 'Julius Sans One', Archivo Narrow;
+    font-family: 'Julius Sans One', sans-serif;
+    font-family: 'Archivo Narrow', sans-serif;
 }
+
+.container {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+  }
 
 a
 {
@@ -11,9 +26,11 @@ a
 nav
 {
     width: 100%;
+    font-family: 'Julius Sans One';
 }
 nav ul
 {
+    display: inline-flex;
     list-style-type: none;
     justify-content: space-between;
     margin-bottom: 0;
@@ -21,7 +38,7 @@ nav ul
 }
 nav ul li
 {
-    display: inline-block;
+    display: inline-flex;
     font-size: 32px;
     margin: 0 16px;
     text-align: center;
@@ -30,38 +47,74 @@ nav ul li img
 {
     width: 16rem;
 }
+
+a:hover{
+    color:rgb(57, 50, 62);
+    border: rgb(57, 50, 62) solid 1px;
+    background-color: rgba(57, 50, 62, .1);
+}
 .backimg
 {
     width: 100%;
     height: 100%;
 }
+.button
+{
+    display: inline-flex;
+    background: linear-gradient(to right, #F018B688, #4C1172);
+    position: absolute;
+    top: 85%;
+    left: 20%;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-size: 24px;
+    min-width: 90px;
+}
+.button svg
+{
+    color: white;
+    height: 30px;
+    width: 32px;
+}
+
+
 .info {
     display: flex; 
     align-items: center; 
+    
 }
 
 .profilepic
 {
     width: 40%;
+    height: 100%;
     padding: 1rem;
     min-width: 200px
 }
 .info p
 {
-    border: 1rem;
     font-family: 'archivo narrow';
     font-size: 32px;
 }
-button
-{
-    display: inline-flex;
-    background: linear-gradient(to right, #F018B6, #4C1172);
-    padding: 10px 20px;
-    border-radius: 50px;
-    font-size: 24px;
-    min-width: 50px;
-}
-button svg
-{
-    color: white;
+
+@media screen and (max-width: 800px) {
+    .button{
+        position: absolute;
+        left:10%;
+        padding: 5px 10px;
+        font-size: 18px;
+    }
+    .button svg{
+        height: 25px;
+        width: 18px;
+    }
+    .info{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .info p {
+        padding: 20px;
+        font-size: 26px;
+    }
+    
 }
