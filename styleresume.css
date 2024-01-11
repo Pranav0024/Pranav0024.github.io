@@ -59,8 +59,14 @@ embed{
     color:rgb(57, 50, 62);
     border: rgb(57, 50, 62) solid 1px;
     background-color: rgba(57, 50, 62, .1);
-    border-radius: 30%;
+    border-radius: 25%;
     padding: 10px 5px;
-    
-
+    position: relative;
+    align-items: center;
+    display: inline-flex;
+    left: 50%;
+}
+.button:hover {
+    background-color: rgba(57, 50, 62, .6);
+    color: azure;
 }
