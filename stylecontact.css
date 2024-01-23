@@ -40,5 +40,15 @@ nav ul li img
 a:hover{
     color:rgb(57, 50, 62);
     border: rgb(57, 50, 62) solid 1px;
-    background-color: rgba(57, 50, 62, .1);
+}
+.email-phone {
+    width: 100vw;
+    display: inline-flex;
+    justify-content: space-evenly;
+    text-decoration: none;
+    font-size: 24px;
+}
+.email{
+    background-color: aqua;
+    border: 2px black solid;
 }
